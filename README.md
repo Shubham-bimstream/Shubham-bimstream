@@ -14,8 +14,8 @@ Civil engineer → MBA (RICS School of Built Environment) → Scan-to-BIM delive
 
 Most of my code lives in private repos at BIMstream. These are extracts from CERQA learnings that are useful as standalone tools:
 
-- **[`cloudfront-aes-gcm-token`](https://github.com/Shubham-bimstream/cloudfront-aes-gcm-token)** — stateless AES-GCM signed asset tokens; CERQA's `AssetTokenService` minus the platform-specific bits. Zero runtime deps, 28 tests, key rotation, AAD-bound version byte.
-- **`e57-streaming-reader`** — pure-Python scan-by-scan E57 reader. Peak RAM 12–15 GB vs PDAL's 150–250 GB on the same input. *(Coming soon.)*
+- **[`cloudfront-aes-gcm-token`](https://github.com/Shubham-bimstream/cloudfront-aes-gcm-token)** — stateless AES-GCM signed asset tokens for CloudFront-fronted content. Zero runtime deps, AES-256-GCM, first-class key rotation, AAD-bound version byte, 28-test suite.
+- **`e57-streaming-reader`** — pure-Python scan-by-scan E57 reader. Memory-efficient ingest for large captures. *(Coming soon.)*
 - **`mcp-server-template`** — Zod-validated, output-sanitised MCP server scaffold for production use. *(Coming soon.)*
 
 ### Connect
